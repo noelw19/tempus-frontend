@@ -1,0 +1,33 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* https://coolors.co/202c39-283845-b8b08d-f2d492-f29559 */
+
+:root {
+  --d1: '#202C39';
+  --d2: "#D8B589 ";
+  --l1: "#D8B589"; /* primary */
+  --l2: #e7e7e9; /* background */
+  --l3: "#418788";
+}
+
+body {
+  height: 90vh;
+  width: 100vw;
+  background-color: var(--l2);
+}
+/* #0D2B1D, #345635, #6B8F71, #AEC3B0, #E3EFD3  */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.active {
+  background-color: #6C5B45;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}

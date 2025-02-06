@@ -1,0 +1,12 @@
+.navComponent {
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--d2);
+    padding: 0.5rem;
+}
+
+.navComponent > h2 {
+    color: var(--l2);
+    font-size: x-large;
+    font-weight: 800;
+}

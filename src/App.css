@@ -1,0 +1,60 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+
+.mainContainer {
+  height: 85vh;
+}
+
+.logo {
+  width: 130px;
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+}
+
+.bubble {
+  --r: 1em;  /* the radius */
+  --t: 1.5em; /* the size of the tail */
+  
+  padding: 1em;
+  border-inline: var(--t) solid #0000;
+  border-radius: calc(var(--r) + var(--t))/var(--r);
+  mask: 
+    radial-gradient(100% 100% at var(--_p) 0,#0000 99%,#000 102%) 
+      var(--_p) 100%/var(--t) var(--t) no-repeat,
+    linear-gradient(#000 0 0) padding-box;
+  /* background: linear-gradient(135deg,#FE6D00,#1384C5) border-box; */
+  color: #fff;
+}
+
+
+
+.left {
+  --_p: 0;
+  border-bottom-left-radius: 0 0;
+  place-self: start;
+  background-color: black;
+}
+.right {
+  --_p: 100%;
+  border-bottom-right-radius: 0 0;
+  place-self: end;
+  background-color: blue;
+}
