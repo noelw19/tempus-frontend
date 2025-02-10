@@ -4,7 +4,7 @@ import {config} from '../../config.js'
 let baseURL = config.backend;
 let publicBaseURL = "https://tempusapi.meliorus.co.nz";
 
-const config = {
+const conf = {
     timeout: 10000,
 }
 
@@ -23,7 +23,7 @@ const addAccessTokenInterceptor = (getAccessTokenSilently) => {
 };
 
 
-const baseAxios = axios.create(config)
+const baseAxios = axios.create(conf)
 
 let authenticatedAxios = {}
 
