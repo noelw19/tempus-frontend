@@ -22,7 +22,7 @@ export const Auth0ProviderWithNavigate = ({ children }) => {
       domain={domain}
       clientId={clientId}
       authorizationParams={{
-        redirect_uri: redirectUri,
+        redirect_uri: window.location.origin + '/callback',
         audience:"bookerApi",
         scope: "openid profile email offline_access"
       }}
