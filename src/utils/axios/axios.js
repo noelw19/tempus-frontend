@@ -1,7 +1,7 @@
 import axios from 'axios'
-import {config} from '../../config.js'
+import {URLS} from '../../config.js'
 
-let baseURL = config.backend;
+let baseURL = URLS.backend;
 let publicBaseURL = "https://tempusapi.meliorus.co.nz";
 
 const conf = {
