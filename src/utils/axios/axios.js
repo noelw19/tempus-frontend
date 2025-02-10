@@ -1,6 +1,8 @@
 import axios from 'axios'
+import {config} from '../../config.js'
 
-let baseURL = "http://localhost:5000";
+let baseURL = config.backend;
+let publicBaseURL = "https://tempusapi.meliorus.co.nz";
 
 const config = {
     timeout: 10000,

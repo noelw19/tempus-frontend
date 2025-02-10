@@ -116,10 +116,10 @@ let Conversation = () => {
         console.log(messages)
         let all = messages.map(msg => {
             console.log(msg)
-            if(msg.type !== "image" || msg.content.includes(URLS.backend)) return msg;
+            if(msg.type !== "image" || msg.content.includes(URLS.backend) || msg.content.includes(URLS.publicBackend)) return msg;
 
             let img = {...msg};
-            img.content = URLS.backend + msg.content;
+            img.content = (msg.content.includes(URLS.backend) ? URLS.backend : URLS.publicBackend) + msg.content;
             return img
         })
         setDetails({...rest, messages: all})
